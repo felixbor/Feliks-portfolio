@@ -5,4 +5,4 @@ The main idea of the project is showing an example of a Portfolio page. The page
 https://github.com/felixbor/Feliks-portfolio
 
 
-![potrfolio page]()
+![potrfolio page](./assets/images/screenshot.png)
