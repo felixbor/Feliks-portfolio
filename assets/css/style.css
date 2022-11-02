@@ -1,4 +1,4 @@
-* {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+* {font-family: 'Trebuchet MS', sans-serif;}
 :root {
  --blue: rgba(168, 163, 217, 0.993);
  --gray: rgb(156, 106, 59);
@@ -6,37 +6,34 @@
 
  header {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  background-color: var(--blue);
- border-bottom: 10px solid green;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgb(71, 71, 240),rgb(104, 142, 202)) ;
+ 
 }
 
 header  h1{
 color: var(--gray);
-font-size: 35px;
+font-size: 45px;
 padding-top: 30px;
 padding-left: 50px;
 }
 
- header nav li {
-  display: flex;
-  flex-direction:row;
-  padding: 20px;
-  display: inline-block;
-  font-size: 20px;
-  color: var(--gray);
+nav  {
+  display: flex ;
+  flex-grow: 1;
+  flex-direction: row;
+ flex-wrap: wrap;
+ justify-content:flex-end ;
+  padding-top: 20px;
 
  }
- a:link {
+ a {
   text-decoration: none;
+  color: aquamarine;
+  padding: 20px;
+  font-size: 35px;
  }
- a:visited {
-  text-decoration: brown;
- }
-header li {
-  color: aqua;
-}
 
  .avatar {
   max-width: 15%;
@@ -50,6 +47,7 @@ header li {
 font-size: 300%;
 padding-left: 20px;
 padding-top: 7%;
+color: rgba(53, 66, 70, 0.644);
 }
 
 
@@ -63,10 +61,29 @@ padding-top: 7%;
   
 }
 
+#aboutme {
+  padding-left: 300px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+   padding-top: 10px;
+  text-align: right;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to top, rgb(71, 71, 240),rgb(104, 142, 202)) ;
+  color: antiquewhite;
+  text-shadow: 0 0 5px rgb(255, 252, 47);
+
+}
+#projects{ 
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px; 
+  text-align: center;
+  background-image:linear-gradient( to right, rgb(16, 187, 178), rgb(129, 37, 37));
+}
 .cards {
   display: grid;
   grid-template-columns:repeat(2,1fr);
-  background-color: var(--blue);
+  background-image: linear-gradient( to right, rgb(16, 187, 178), rgb(129, 37, 37));
 }
 .cards a img{
   width: 100%;
@@ -121,14 +138,19 @@ nav  a:hover {
  }
  
  @media screen and (max-width: 992px  ) {
-  .container
-   {display: grid;
-    grid-template-columns:repeat(2, 1fr);
+  header {display: flex;
+    justify-content: flex-start;
+    flex-direction: column;}
+  .cards
+   {display: flex;
+    flex-direction: column;
    }
 }
 @media screen and (max-width: 768px) {
- body
-.container
+header {display: flex;
+  flex-direction: column;}
+  nav {flex-direction: column;}
+.cards
    {display: flex;
     flex-direction: column;
   }
