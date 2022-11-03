@@ -4,6 +4,9 @@
  --gray: rgb(156, 106, 59);
 }
 
+body {
+  display: block;
+}
  header {
   display: flex;
   flex-direction: row;
@@ -15,7 +18,7 @@
 header  h1{
 color: var(--gray);
 font-size: 45px;
-padding-top: 30px;
+padding-top: 40px;
 padding-left: 50px;
 }
 
@@ -31,12 +34,13 @@ nav  {
  a {
   text-decoration: none;
   color: aquamarine;
-  padding: 20px;
+  padding: 30px;
+  padding-top: 45px;
   font-size: 35px;
  }
 
  .avatar {
-  max-width: 15%;
+  max-width: 20%;
   height: auto;
   float: left;
   padding-right: 20px;
@@ -74,8 +78,8 @@ color: rgba(53, 66, 70, 0.644);
 
 }
 #projects{ 
-  font-size: 25px;
-  font-weight: 500;
+  font-size:35px;
+  color:wheat ;
   padding: 10px; 
   text-align: center;
   background-image:linear-gradient( to right, rgb(16, 187, 178), rgb(129, 37, 37));
@@ -86,7 +90,10 @@ color: rgba(53, 66, 70, 0.644);
   background-image: linear-gradient( to right, rgb(16, 187, 178), rgb(129, 37, 37));
 }
 .cards a img{
-  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  width: 90%;
   padding: 20px;
 
 }
@@ -95,8 +102,8 @@ color: rgba(53, 66, 70, 0.644);
 }
  .container .btn {
  position: absolute;
-  top: 50%;
-  left: 2%;
+  top: 65%;
+  left: 5%;
   background-color: #555;
   color: white;
   font-size: 16px;
@@ -112,7 +119,7 @@ color: rgba(53, 66, 70, 0.644);
   background-color: yellowgreen ;
   text-align: center;
   font-size: 25px;
-  border: 5px solid rgb(53, 184, 204);
+  color: rgb(97, 97, 66);
 }
 .contact form {
   text-align: center  ;
@@ -121,7 +128,7 @@ color: rgba(53, 66, 70, 0.644);
   background-color: bisque;
 }
  footer {
-  background-color: blueviolet;
+  background-color: rgb(157, 122, 190);
   font-size:  25px; 
   text-align: center;
   padding: 10px;
